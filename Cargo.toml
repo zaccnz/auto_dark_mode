@@ -1,0 +1,16 @@
+[package]
+name = "auto_dark_mode"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+readme = "README.md"
+description = "automatically sync dark theme with night light on Windows 10 / 11"
+authors = ["Zac Cleveland"]
+
+[dependencies]
+winreg = "0.5.1"
+registry = "1.2.2"
+reg-watcher = "0.1"
+clap = { version = "3.0", features = ["derive"] }
+sysinfo = "0.27.0"
+winapi = { version = "0.3.4", features = ["winuser"] }
